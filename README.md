@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Jithu Baiju</h1>
-<h3 align="center">A passionate Web developer, Application Developer, Game Developer from India</h3>
+<h3 align="center">A passionate Web developer, Flutter Developer, Game Developer from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jithubaiju55&label=Profile%20views&color=0e75b6&style=flat" alt="jithubaiju55" /> </p>
 
