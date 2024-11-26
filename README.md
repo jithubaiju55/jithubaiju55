@@ -1,8 +1,11 @@
 # Hi there 👋, I'm Jithu Baiju  
 ### A Passionate Web and Application Developer from India  
-![Snake animation](https://github.com/jithubaiju55/jithubaiju55/blob/output/github-contribution-grid-snake.svg)
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00FF00&width=435&lines=Hello%2C+I'm+Jithu+Baiju!;Welcome+to+my+GitHub+Profile;I+love+building+cool+things+with+code!" alt="Typing Animation" />
+</p>
 
 ---
+
 ![Profile Views](https://komarev.com/ghpvc/?username=jithubaiju55&label=Profile%20views&color=0e75b6&style=flat)  
 [![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=jithubaiju55)](https://github.com/ryo-ma/github-profile-trophy)
 
