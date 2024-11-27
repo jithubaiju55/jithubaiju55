@@ -1,0 +1,21 @@
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-size: 48px;
+      font-family: "Arial Black", sans-serif;
+      fill: none;
+      stroke: #3498db;
+      stroke-width: 2px;
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: stroke-animation 3s ease-out forwards;
+    }
+
+    @keyframes stroke-animation {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+  <text x="50" y="100" class="text">JITHU BAIJU</text>
+</svg>
