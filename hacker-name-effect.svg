@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150" width="600" height="150">
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(45)">
+      <stop offset="20%" stop-color="#0f0" />
+      <stop offset="50%" stop-color="#00ff99" />
+      <stop offset="80%" stop-color="#0f0" />
+    </linearGradient>
+  </defs>
+  <text x="50" y="100" font-size="48" font-family="monospace" fill="url(#gradient)" textLength="500">
+    JITHU BAIJU
+  </text>
+  <style>
+    @keyframes glitch {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(-2px, -2px);
+      }
+      50% {
+        transform: translate(2px, 2px);
+      }
+      75% {
+        transform: translate(-1px, 1px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+    text {
+      animation: glitch 0.2s infinite;
+    }
+  </style>
+</svg>
