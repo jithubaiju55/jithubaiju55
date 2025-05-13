@@ -13,7 +13,7 @@
 ---
 
 ## 🚀 About Me
-- 🌱 Currently learning **Machine Learning**
+- 🌱 Currently learning **DATA SCIENCE**
 - 👨‍💻 Explore all my projects on [My Portfolio](https://jithubaiju55.github.io/)
 - 💬 Ask me about **Flutter, React**
 - 📫 Reach me at **jithubajiu124@gmail.com**
