@@ -15,7 +15,8 @@ CSS = (f".s{{font-family:{S}}}.m{{font-family:{M}}}"
        "@keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}"
        ".flk{animation:flicker 6s infinite}"
        "@keyframes flicker{0%,93%,100%{opacity:.04}94%{opacity:.12}95%{opacity:.02}96%{opacity:.1}97%{opacity:.03}}"
-       "@keyframes blink{50%{opacity:.15}}")
+       "@keyframes blink{50%{opacity:.15}}"
+       "@keyframes pulse2{0%{transform:scale(.85);opacity:.9}70%,100%{transform:scale(2.5);opacity:0}}")
 
 GLOW = '<filter id="gw" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
 GLOWS = '<filter id="gws" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'

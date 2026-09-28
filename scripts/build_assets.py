@@ -18,7 +18,7 @@ def hero():
          f'<radialGradient id="sun" cx=".5" cy="1" r=".55"><stop offset="0" stop-color="{CYAN}" stop-opacity=".5"/><stop offset=".7" stop-color="{MAG}" stop-opacity=".14"/><stop offset="1" stop-color="{MAG}" stop-opacity="0"/></radialGradient>'
          f'<linearGradient id="wd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{MAG}"/></linearGradient>'
          f'<linearGradient id="bd" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}" stop-opacity=".7"/><stop offset=".5" stop-color="{HAIR}"/><stop offset="1" stop-color="{MAG}" stop-opacity=".55"/></linearGradient>'
-         f'<clipPath id="cp"><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="8"/></clipPath><style>{PULSE_CSS}</style>')
+         f'<clipPath id="cp"><rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="8"/></clipPath>')
     b = [f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="8" fill="{BG}"/><g clip-path="url(#cp)">',
          f'<rect width="{W}" height="{H}" fill="url(#sky)"/>',
          starfield(W, horizon + 20, 130, 22, [CYAN, MAG, "#fff", AMBER]),
@@ -51,7 +51,7 @@ def hero():
              f'<text x="48" y="380" class="m" font-size="9.5" letter-spacing="1.5" fill="{DIM}">LVL 99 · SHIPPING SINCE 2024 · XP CAP REACHED</text></g>')
     b.append(scanlines(W, H, "hero", .045))
     b.append(marks(W, H) + f'<rect x=".75" y=".75" width="{W-1.5}" height="{H-1.5}" rx="8" stroke="url(#bd)" stroke-width="1.5"/>')
-    open(out("hero.svg"), "w").write(svg(W, H, "".join(b), d))
+    open(out("hero.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(b), d))
 
 # ═════════════ LEVEL TILES (services) ═════════════
 LEVELS = [
@@ -68,7 +68,8 @@ def stars(x, y, n, lit, col):
     o = []
     for i in range(n):
         cx = x + i * 15
-        o.append(f'<path d="M{cx} {y-5}l1.5 3.2 3.5.4-2.6 2.4.7 3.5-3.1-1.8-3.1 1.8.7-3.5-2.6-2.4 3.5-.4z" fill="{col}" stroke="{col}"/>')
+        opacity = "1" if i < lit else ".18"
+        o.append(f'<path d="M{cx} {y-5}l1.5 3.2 3.5.4-2.6 2.4.7 3.5-3.1-1.8-3.1 1.8.7-3.5-2.6-2.4 3.5-.4z" fill="{col}" opacity="{opacity}"/>')
     return "".join(o)
 
 def level(i, repo, slug, desc, tag, col, diff, meta):
@@ -91,7 +92,7 @@ def level(i, repo, slug, desc, tag, col, diff, meta):
     b.append(f'<text x="20" y="150" class="m" font-size="10.5" fill="{DIM}">{E(meta)}</text>')
     b.append(f'<text x="{W-20}" y="150" text-anchor="end" class="m" font-size="10" fill="{col}">github.com/jithubaiju55/{E(repo)} ↗</text>')
     b.append(marks(W, H, i=9, s=3.5))
-    open(out(f"level-{i}.svg"), "w").write(svg(W, H, f'<g class="g" style="animation-delay:{(i-1)*.08:.2f}s">' + "".join(b) + '</g>', d))
+    open(out(f"level-{i}.svg"), "w", encoding="utf-8").write(svg(W, H, f'<g class="g" style="animation-delay:{(i-1)*.08:.2f}s">' + "".join(b) + '</g>', d))
 
 # ═════════════ ISOMETRIC PIPELINE ═════════════
 def iso_box(cx, cy, w, d, h, top_c, left_c, right_c):
@@ -131,7 +132,7 @@ def pipeline():
         b.append(f'<circle r="3.4" fill="#fff" filter="url(#gw)"><animateMotion path="{path}" dur="7.8s" begin="{delay}s" repeatCount="indefinite"/>'
                  f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.04;.93;1" dur="7.8s" begin="{delay}s" repeatCount="indefinite"/></circle>')
     b.append(f'<text x="24" y="{H-14}" class="m" font-size="10" fill="{DIM}">e.g. ClinicalAgent · AI-Researcher · RagKB all follow this shape</text>')
-    open(out("pipeline.svg"), "w").write(svg(W, H, "".join(b)))
+    open(out("pipeline.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(b)))
 
 # ═════════════ QUEST LOG ═════════════
 LOG = [
@@ -157,14 +158,14 @@ def questlog():
                  f'<text x="120" y="{y+23}" class="s" font-size="12" fill="#9aa0ab">{E(desc)}</text>'
                  f'<rect x="{W-120}" y="{y-14}" width="88" height="20" rx="10" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".5"/>'
                  f'<text x="{W-76}" y="{y}" text-anchor="middle" class="m" font-size="9.5" fill="{col}">+XP UNLOCKED</text></g>')
-    open(out("questlog.svg"), "w").write(svg(W, H, "".join(b)))
+    open(out("questlog.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(b)))
 
 # ═════════════ CTA ═════════════
 def cta():
     W, H = 900, 190
     d = (f'<radialGradient id="gg" cx=".08" cy="0" r="1"><stop offset="0" stop-color="{CYAN}" stop-opacity=".16"/><stop offset="1" stop-color="{CYAN}" stop-opacity="0"/></radialGradient>'
          f'<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity=".6"/><stop offset="1" stop-color="{MAG}" stop-opacity=".45"/></linearGradient>'
-         f'<linearGradient id="wd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{MAG}"/></linearGradient><style>{PULSE_CSS}</style>')
+         f'<linearGradient id="wd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{MAG}"/></linearGradient>')
     b = [f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="8" fill="{BG}"/><rect width="{W}" height="{H}" rx="8" fill="url(#gg)"/>']
     b.append(cube_badge(70, 95, 26, CYAN, MAG, "cta1", dur=4.0))
     b.append(f'<g class="f"><text x="112" y="80" class="s" font-size="27" font-weight="800" fill="{INK}">Got something worth building?</text>'
@@ -175,7 +176,7 @@ def cta():
              f'<text x="{W-24}" y="76" class="m" font-size="11" fill="{CYAN}">linkedin.com/in/jithubaiju</text>'
              f'<text x="{W-24}" y="96" class="m" font-size="11" fill="{CYAN}">jithubaiju55.github.io</text></g>')
     b.append(marks(W, H) + f'<rect x=".75" y=".75" width="{W-1.5}" height="{H-1.5}" rx="8" stroke="url(#bd)" stroke-width="1.5"/>')
-    open(out("cta.svg"), "w").write(svg(W, H, "".join(b), d))
+    open(out("cta.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(b), d))
 
 if __name__ == "__main__":
     hero()
