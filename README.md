@@ -1,104 +1,46 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Jithu Baiju — ML Engineer and AI Developer. Model card."/>
-
-<br/>
-
-<a href="https://jithubaiju55.github.io/"><img src="https://img.shields.io/badge/portfolio-c8ff2e?style=flat-square&logo=googlechrome&logoColor=05060a&labelColor=05060a"/></a>
-<a href="https://linkedin.com/in/jithubaiju"><img src="https://img.shields.io/badge/linkedin-c8ff2e?style=flat-square&logo=linkedin&logoColor=05060a&labelColor=05060a"/></a>
-<a href="mailto:jithubaiju124@gmail.com"><img src="https://img.shields.io/badge/email-c8ff2e?style=flat-square&logo=gmail&logoColor=05060a&labelColor=05060a"/></a>
+<img src="./assets/banner.svg" width="100%" alt="Jithu Baiju — all systems operational"/>
 
 </div>
 
 <br/>
 
-## Model description
+## Services
 
-| | |
-|:--|:--|
-| **Developed by** | Jithu Baiju |
-| **Model type** | ML Engineer · AI Developer |
-| **Base model** | B.Sc. Computer Science (2025) |
-| **Languages** | Python · C · Go · Java |
-| **Specialties** | Generative AI · RAG · Agentic AI · Computer Vision |
-| **Location** | Kerala, India 🇮🇳 |
-| **Status** | Exploring cutting-edge LLM applications |
-| **License** | Open to collaboration |
+<sub>Everything below is a real, running repository — status, activity and links point at the actual project.</sub>
 
-<details>
-<summary><code>metadata</code></summary>
+<br/>
 
-```yaml
-language: [python, c, go, java]
-license: open-to-collaboration
-base_model: B.Sc. Computer Science (2025)
-pipeline_tag: agentic-ai
-tags: [genai, rag, agents, computer-vision, pytorch, langchain]
-goal: build AI that solves real-world problems
-```
-
-</details>
+<a href="https://github.com/jithubaiju55/neuralhive"><img src="./assets/svc-1.svg" width="100%" alt="neuralhive"/></a>
+<a href="https://github.com/jithubaiju55/AgenticFuzzer"><img src="./assets/svc-2.svg" width="100%" alt="agentic-fuzzer"/></a>
+<a href="https://github.com/jithubaiju55/ClinicalAgent"><img src="./assets/svc-3.svg" width="100%" alt="clinical-agent"/></a>
+<a href="https://github.com/jithubaiju55/AI-Researcher"><img src="./assets/svc-4.svg" width="100%" alt="ai-researcher"/></a>
+<a href="https://github.com/jithubaiju55/RagKB"><img src="./assets/svc-5.svg" width="100%" alt="rag-kb"/></a>
+<a href="https://github.com/jithubaiju55/openenv-project"><img src="./assets/svc-6.svg" width="100%" alt="sql-repair-env"/></a>
+<a href="https://github.com/jithubaiju55/lazyload"><img src="./assets/svc-7.svg" width="100%" alt="lazyload"/></a>
+<a href="https://github.com/jithubaiju55/pytrace-live"><img src="./assets/svc-8.svg" width="100%" alt="pytrace-live"/></a>
 
 <br/>
 
 ## Architecture
 
-<img src="./assets/architecture.svg" width="100%" alt="Architecture: Data, Represent, Reason, Serve"/>
+<img src="./assets/flow.svg" width="100%" alt="Request flow through client, gateway, orchestrator, model, data"/>
 
 <br/>
 
-## Evaluation
+## Changelog
 
-<img src="./assets/eval.svg" width="100%" alt="Evaluation results across four projects"/>
-
-<br/>
-
-## Checkpoints
-
-| Checkpoint | Task | Result | Built with |
-|:--|:--|:--|:--|
-| [**AI-Researcher**](https://github.com/jithubaiju55/AI-Researcher) | Autonomous multi-step web research agent that writes structured reports | **~70%** less manual research time | LangChain ReAct · Llama 3.3 70B · Groq · Streamlit |
-| [**RagKB**](https://github.com/jithubaiju55/RagKB) | Fully local RAG chatbot, zero external API dependency | **< 2s** response latency | Ollama embeddings · SQLite vectors · FastAPI · SSE streaming |
-| [**Road-Damage-Classification**](https://github.com/jithubaiju55/Road-Damage-Classification) | Classifies road cracks, potholes and normal surfaces | **80%** test accuracy | ResNet18 · PyTorch · Streamlit |
-| [**Employee-Attrition-Prediction**](https://github.com/jithubaiju55/Employee-Attrition-Prediction) | Predicts attrition with feature importance and live probabilities | **82%** accuracy | Random Forest · scikit-learn · Pandas · Streamlit |
+<img src="./assets/changelog.svg" width="100%" alt="Changelog: 2024 dev tools, 2025 ML, 2026 agents and PyPI"/>
 
 <br/>
 
-## Training run
+## System load
 
-<img src="./assets/training.svg" width="100%" alt="Live GitHub activity: cumulative contributions, streaks, daily heatmap, language mixture"/>
+<img src="./assets/load.svg" width="100%" alt="Live GitHub contribution activity"/>
 
-<sub>Generated from live GitHub data every 6 hours.</sub>
-
-<br/>
-
-## Intended use
-
-Building agentic systems, retrieval pipelines and vision models that ship.
-
-**Limitations:** early in career. Performs best when handed a real problem and room to build.
-
-## Get started
-
-```python
-from jithu import Engineer
-
-me = Engineer.from_pretrained("jithubaiju55")
-me.collaborate(topics=["agentic AI", "RAG", "computer vision"])
-# → jithubaiju124@gmail.com
-```
-
-## Citation
-
-```bibtex
-@misc{baiju2026jithu,
-  author       = {Jithu Baiju},
-  title        = {Jithu Baiju: ML Engineer and AI Developer},
-  year         = {2026},
-  howpublished = {\url{https://github.com/jithubaiju55}}
-}
-```
+<sub>Refreshed every 6 hours from live GitHub data.</sub>
 
 <br/>
 
-<div align="center"><sub><code>jithu-baiju-2025</code> · built to ship · <a href="mailto:jithubaiju124@gmail.com">say hello</a></sub></div>
+<img src="./assets/cta.svg" width="100%" alt="Get in touch"/>
